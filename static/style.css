@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: "Avenir", "Futura", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, input, label {
+    line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, button,
+textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+:root {
+    color-scheme: light dark;
+}
