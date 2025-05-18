@@ -19,7 +19,7 @@ services:
           action: rebuild
 
   cassandra-1:
-    image: "cassandra:latest"  # cassandra:4.1.3
+    image: "cassandra:5.0.4"
     container_name: "cassandra-1"
     ports:
       - 7000:7000
@@ -45,7 +45,7 @@ services:
       retries: 3
 
   cassandra-2:
-    image: "cassandra:latest"
+    image: "cassandra:5.0.4"
     container_name: "cassandra-2"
     ports:
       - 9043:9042
@@ -74,7 +74,7 @@ services:
       retries: 3
 
   cassandra-3:
-    image: "cassandra:latest"
+    image: "cassandra:5.0.4"
     container_name: "cassandra-3"
     ports:
       - 9044:9042
@@ -103,7 +103,7 @@ services:
       retries: 3
 
   cassandra-init:
-    image: "cassandra:latest"
+    image: "cassandra:5.0.4"
     container_name: cassandra-init
     depends_on:
       cassandra-1:

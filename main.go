@@ -56,7 +56,7 @@ const (
 )
 
 func main() {
-	cluster := gocql.NewCluster("cassandra-1:9042")
+	cluster := gocql.NewCluster("cassandra-1:9042", "cassandra-2:9042", "cassandra-3:9042") //
 	cluster.Keyspace = "db"
 	cluster.Consistency = gocql.Quorum
 
